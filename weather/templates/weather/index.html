@@ -21,7 +21,7 @@
 <div class="container mt-5">
 
     <div class="row">
-        <div class="col-5 offset-1">
+        <div class="col-5">
             <h1>Weather App</h1>
           <form action="">
               <label for="city">City</label>
@@ -29,11 +29,15 @@
                      placeholder="Enter your city">
               <input type="submit" name="send" value="Find out" class="mt-2 btn btn-danger">
           </form>
+
         </div>
-        <div class="col-4 offset-1">
+        <div class="col-5 offset-2">
           <h1>Information</h1>
-            <div class="alert alert-light">
-                Weather in Kyiv
+            <div class="alert alert-danger">
+                <b>City:</b> {{ info.city }}<br>
+                <b>Temperature:</b> {{ info.temp }}<sup>o</sup><br>
+                <img src="http://openweathermap.org/img/w/{{ info.icon }}.png"
+                alt="Weather img" class="img-thumbnail">
             </div>
         </div>
     </div>
