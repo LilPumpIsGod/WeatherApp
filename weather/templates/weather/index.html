@@ -24,9 +24,9 @@
         <div class="col-5">
             <h1>Weather App</h1>
           <form action="" method="post">
+              {% csrf_token %}
               <label for="city">City</label>
-              <input type="text" id="city" class="form-control" name="city"
-                     placeholder="Enter your city">
+              {{ form.name }}
               <input type="submit" name="send" value="Find" class="mt-2 btn btn-danger">
           </form>
 
