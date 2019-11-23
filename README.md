@@ -1,3 +1,3 @@
 # WeatherApp
 Weather site.
-I am using Python Django and api of openweathermap site 
+I used Python Django and api of openweathermap site 
